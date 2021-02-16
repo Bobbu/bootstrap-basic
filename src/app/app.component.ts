@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+declare var $;
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 @Component({
   selector: 'app-root',
@@ -7,4 +12,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bootstrap-basic';
+
 }
